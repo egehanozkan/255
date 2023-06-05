@@ -1,0 +1,99 @@
+/* 
+    CTIS 255 Frontend Web Technologies
+    2022-2023 Spring
+      TEAM 15 
+Doğa Çekmegül (Section 2)
+Tarık Düzenli (Section 1)
+Can Yaman İpekli (Section 1)
+Egehan Özkan (Section 1) 
+*/
+
+.types{
+    justify-content: center;
+    text-align: center;
+}
+li{
+    list-style-type: none;
+    margin: 10px;
+    text-align: center;
+    justify-content: center;
+}
+h2{
+    padding-left: 40px;
+}
+.polType{
+    justify-content: center;
+    text-align: center;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-stretch: extra-condensed;
+}
+.polType:hover{
+    text-shadow: 1em;
+    color: azure;
+    font-weight: 900;
+    font-family: fantasy;
+    font-style: normal;
+}
+#air{
+    margin: 5px;
+    text-align: justify;
+    border: 1px solid ;
+    border-radius: 0.8em;
+    padding: 8px;
+    background-image: url(../images/pexels-donald-tong-139366.jpg);
+    color: black;
+    
+}
+#air:hover{
+    color: maroon;
+    text-decoration-color: aquamarine;
+    font-style: oblique;
+    visibility: visible;
+}
+#water{
+    margin: 5px;
+    text-align: justify;
+    border: 1px solid ;
+    border-radius: 0.8em;
+    padding: 8px;
+    background-image: url(../images/top-view-clear-ocean-water-texture.jpg)
+}
+#water:hover{
+    color: maroon;
+    text-decoration-color: aquamarine;
+    font-style: oblique;
+}
+#land{
+    margin: 5px;
+    text-align: justify;
+    border: 1px solid ;
+    border-radius: 0.8em;
+    padding: 8px;
+    background-image: url(../images/38488977-asciutto-e-rotto-con-le-pietre-immagine-orizzontale.jpg);
+    color: whitesmoke;
+    background-blend-mode: lighten;
+    backface-visibility: hidden;
+    
+}
+#land:hover{
+    font-style: italic;
+}
+footer{
+    justify-content: center;
+    text-align: center;
+    margin: 10px;
+}
+button{
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#home{
+    color: green;
+}
+#home:hover{
+    color: whitesmoke;
+    text-decoration: none;
+    text-shadow: none;
+}

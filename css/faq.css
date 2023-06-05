@@ -1,0 +1,72 @@
+/* 
+    CTIS 255 Frontend Web Technologies
+    2022-2023 Spring
+      TEAM 15 
+Doğa Çekmegül (Section 2)
+Tarık Düzenli (Section 1)
+Can Yaman İpekli (Section 1)
+Egehan Özkan (Section 1) 
+*/
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color:rgb(230, 250, 230);
+}
+
+nav {
+  background-color: darkgreen;
+}
+
+.brand-logo {
+  padding-left: 5px;
+  font-size: larger;
+  justify-content: center;
+  color: #f1f1f1;
+  text-align: left;
+  padding-top: 15px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  justify-content: space-between;
+}
+
+a:hover {
+  background-color: #26a69a;
+  text-decoration-line: underline;
+}
+
+.links {
+  justify-content: right;
+  padding-top: 10px;
+  border: 1px solid #fff;
+  border-radius: 0.8em;
+  padding: 8px;
+  margin: 10px;
+}
+
+.container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.faq {
+  margin-bottom: 20px;
+}
+
+.faq h3 {
+  margin: 0;
+}
+
+.faq p {
+  margin-top: 5px;
+}
+
+footer {
+  background-color: darkgreen;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
