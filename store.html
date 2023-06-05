@@ -1,0 +1,116 @@
+<!-- 
+    CTIS 255 Frontend Web Technologies
+    2022-2023 Spring
+      TEAM 15 
+Doğa Çekmegül (Section 2)
+Tarık Düzenli (Section 1)
+Can Yaman İpekli (Section 1)
+Egehan Özkan (Section 1) 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Environmental Pollution and Recycling | Store</title>
+    <link rel="stylesheet" type="text/css" href="./css/store.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+              <a href="home.html" class="brand-logo"
+                >Environmental Pollution and Recycling</a
+              >
+              <a href="store.html" class="links">Store</a>
+              <a href="pollution.html" class="links">Pollution</a>
+              <a href="recycling.html" class="links">Recycling</a>
+              <a href="contact.html" class="links">Contact</a>
+              <a href="faq.html" class="links">FAQ</a>
+            </div>
+        </nav>
+        
+      </header>
+      <h1>Store</h1>
+      <section>
+        <h2>Welcome to Our Store!</h2>
+        
+        <div class="game">
+          <h3>Play the Environmental Puzzle Game</h3>
+          <p>Test your knowledge and win a discount code!</p>
+          <a href="home.html" class="play-btn">Play Now</a>
+        </div>
+        
+        <h3>Clothes on Sale</h3>
+        <div class="sale-items">
+          
+          <div class="product">
+            <img src="./images/t-shirt.webp" alt="T-Shirt">
+            <h4>Organic Cotton T-Shirt</h4>
+            <p>Price: $19.99</p>
+            <form>   
+              <p>Select your size:</p>
+            
+                  <input type="radio" name="size" value="XS" id="xs">
+                  <label for="xs">XS</label>
+                  <input type="radio" name="size" value="S" id="s">
+                  <label for="s">S</label>
+                  <input type="radio" name="size" value="M" id="m">
+                  <label for="m">M</label>
+                  <input type="radio" name="size" value="L" id="l">
+                  <label for="l">L</label>
+                  <input type="radio" name="size" value="XL" id="xl">
+                  <label for="xl">XL</label>
+            </form>
+            <div id="formValues">
+
+            </div>            
+            <a href="buy.html" class="buy-btn">Buy Now</a>
+          </div>
+          
+          <div class="product">
+            <img src="./images/hoodie.webp" alt="Hoodie">
+            <h4>Recycled Polyester Hoodie</h4>
+            <p>Price: $39.99</p>
+            <form>   
+              <p>Select your size:</p>
+            
+                  <input type="radio" name="size" value="XS" id="xs">
+                  <label for="xs">XS</label>
+                  <input type="radio" name="size" value="S" id="s">
+                  <label for="s">S</label>
+                  <input type="radio" name="size" value="M" id="m">
+                  <label for="m">M</label>
+                  <input type="radio" name="size" value="L" id="l">
+                  <label for="l">L</label>
+                  <input type="radio" name="size" value="XL" id="xl">
+                  <label for="xl">XL</label>
+            </form>
+            <div id="formValues">
+
+            </div>            
+            <a href="buy.html" class="buy-btn">Buy Now</a>
+          </div>
+          
+          <!-- Add more products as needed -->
+        </div>
+      </section>
+      
+      <footer>
+        <p>&copy; 2023 Environmental Pollution and Recycling. All rights reserved.</p>
+      </footer>
+</body>
+</html>
+<script>
+  function display(){
+    divWithFormValuesId = document.querySelector("#formValues");
+   
+    var selectedRadioButton= document.querySelector("input[name='size']:checked");
+    
+    divWithFormValuesId.innerHTML= selectedRadioButton.value;
+  }
+ 
+</script>

@@ -1,0 +1,109 @@
+<!-- 
+    CTIS 255 Frontend Web Technologies
+    2022-2023 Spring
+      TEAM 15 
+Doğa Çekmegül (Section 2)
+Tarık Düzenli (Section 1)
+Can Yaman İpekli (Section 1)
+Egehan Özkan (Section 1) 
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Environmental Pollution and Recycling</title>
+  <script src="./script/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/puzzle.css">
+
+  <style>
+    table {border-collapse: collapse; margin: 0 auto; }
+    td, th{ border: 1px solid rgb(227, 237, 226); padding: 10px;}
+    #num{ background-color: black; color:white}
+    tr:last-of-type{ text-align: center;}
+    h2,  #tdWithButton, div#res{ text-align: center;}   
+    span{color: green; font-weight: bold;}
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="container">
+        <a href="home.html" class="brand-logo">Environmental Pollution and Recycling</a>
+        <a href="store.html" class="links">Store</a>
+        <a href="pollution.html" class="links">Pollution</a>
+        <a href="recycling.html" class="links">Recycling</a>
+        <a href="contact.html" class="links">Contact</a>
+        <a href="faq.html" class="links">FAQ</a>
+      </div>
+    </nav>
+  </header>
+  <h1>Puzzle game</h1>
+  <hr>
+  <div><img src="./images/10.jpg" alt="full Image"></div>
+  <div id="board"></div>
+  <h1>Turns : <span id="turns">0</span></h1>
+  <script src="./script/puzzle.js"></script>
+
+</body>
+<footer>
+  <form align="center" action="">
+    <h2 >We Need You!</h2>
+    <table align="center"s>
+      <tr>
+        <td>Name:</td>
+        <td><input type="text" name="uname" id="uname" placeholder="Tony Montana"></td>
+      </tr>
+      <tr>
+        <td>Your Phone Number:</td>
+        <td><input type="text" name="nmb" id="nmb" placeholder="(5xx xxx xx xx)"></td>
+      </tr>
+      <tr>
+        <td>Your E-mail:</td>
+        <td><input type="text" name="E-mail" id="E-mail" placeholder="tony@gmail.com"></td>
+      </tr>
+      <tr>
+        <td>Province:</td>
+        <td>
+          <select name="province" id="province">
+              <option value="ank">Ankara</option>
+              <option value="ist">İstanbul</option>
+              <option value="izm">İzmir</option>
+              <option value="ant">Antalya</option>
+              <option value="bur">Bursa</option>
+              <option value="adn">Adana</option>
+              <option value="dyr">Diyarbakır</option>
+              <option value="blk">Balıkesir</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Choose a working area:</td>
+        <td>
+          <select name="area" id="area">
+              <option value="airp">Air Pollution</option>
+              <option value="wat">Water Pollution</option>
+              <option value="land">Land Pollution</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Want to get informed by e-mail:</td>
+        <td><input type="checkbox" name="ntf" id="ntf"></td>
+      </tr>
+      <tr>
+        <td colspan="2"><textarea placeholder="Write your ideas and suggestions:" name="result" id="result" cols="40" rows="10"></textarea></td>        
+      </tr>
+      <tr>
+        <td colspan="2" id="tdWithButton">
+          <input type="button" value="Be a volunteer" id="btnCalculate" name="btCalculate" onclick="alert('Your aplication has been received. Thank You.')">
+        </td>      
+      </tr>
+    </table>
+  </form>
+  <div id="res">
+
+  </div>
+</footer>
+</html>
